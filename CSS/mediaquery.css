@@ -1,0 +1,95 @@
+
+/*Header Media Query*/
+
+@media only screen and (max-width: 320px) {
+    h1.title{
+        padding-bottom: unset;
+    }
+    h1.title a{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 900px){
+    h1.title{
+        padding-bottom: unset;
+    }
+    h1.title a{
+        font-size: 50px;
+    }
+}
+
+
+
+
+/*Footer*/
+/*MOBILE DEVICES*/
+/*IPHONE X */
+@media only screen and (min-device-width : 320px) and (max-device-width : 612px){
+
+    div.footer-fields{
+        width: 20%;
+    }
+    div.footer-fields p {
+        font-size: 14px;
+    }
+}
+
+
+
+/*IPAD*/
+@media only screen and (min-device-width : 613px) and (max-device-width : 1024px){
+
+    div.footer-fields{
+        width: 20%;
+    }
+    div.footer-fields p{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+/*BLOG POSTS GRID*/
+/*MOBILE DEVICES/
+/*IPHONE X */
+@media only screen and (min-device-width : 320px) and (max-device-width : 812px){
+    .container{
+        display: block;
+        padding: 40px;
+    }
+    .fa.fa-user{
+        font-size: 7px!important;
+        padding-right: 10px;
+    }
+    .fa.fa-calendar{
+        font-size: 7px!important;
+        padding-right: 10px;
+    }
+    h5 {
+        font-size: 7px;
+    }
+    p {
+        font-size: 30px;
+    }
+    button a{
+        font-size: 20px!important;
+    }
+
+}
+
+
+
+/*IPAD*/
+@media only screen and (min-device-width : 813px) and (max-device-width : 1024px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+/*    p {
+        font-size: 15px;
+    }*/
+}

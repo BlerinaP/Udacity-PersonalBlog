@@ -1,37 +1,47 @@
 /*GRID CSS*/
 @import "footer.css";
-body{
+@import "mediaqueryposts.css";
+
+
+body {
     display: grid;
     grid-template-areas:
     "hd hd hd hd"
-    "main main sidebar sidebar"
+    "main main main sidebar"
     "ft ft ft ft";
     margin: 0;
 }
 
-header{
+header {
     grid-area: hd;
-    background: url("../images/caffeine.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     opacity: 0.7;
     border-bottom: 2px solid #323232;
 }
 
-.main{
+header.post1 {
+    background: url("../images/caffeine.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header.post2 {
+    background: url("../images/cucumber-mask.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header.post3 {
+    background: url("../images/honey.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main {
     grid-area: main;
 }
 
-.sidebar{
-    grid-area: sidebar;
-    background-color: rgba(156, 227, 204, 0.61);
-    padding: 50px 100px 50px 100px;
-    border-left: 1px solid #3c3c3c;
-}
 
-footer{
-    grid-area: ft;
-}
+
 
 /*Styling header*/
 .header-main{
@@ -62,12 +72,12 @@ ul li a {
 
 }
 div.title-wrap{
-    width: 29%;
+    width: 45%;
     padding-top: 70px;
     padding-bottom: 150px;
     padding-left: 60px;
 }
-p.title{
+h1.title{
     text-shadow: 2px 2px 5px #262d34;
     font-size: 50px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -78,20 +88,21 @@ p.title{
 }
 /*MAIN - AUTHOR*/
 
-div.author{
+div.author {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px auto;
+    padding: 0px 5px 5px 3px;
+    margin: 10px auto;
     background-color: hsla(140, 40%, 68%, 0.21);
 }
 
 div.image{
     width: 50px;
     height: 30px;
-    margin: 50px 20px 50px 30px;
-    padding: 40px;
+    margin: 50px 5px 50px 5px;
+    padding: 50px;
     background: url("../images/author.jpg");
     background-size: cover;
     border-radius: 50%;
@@ -104,16 +115,16 @@ div.info p{
 }
 
 /*MAIN - CONTENT*/
-div.content{
+article.content{
     width: 80%;
     margin: 20px auto;
 }
-div.content p{
+article.content p{
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 2;
     font-size: 17px;
 }
-div.content p a{
+article.content p a{
     text-decoration: none;
     color: #2a2a2a;
 }
@@ -155,31 +166,27 @@ div.share h4{
     padding-right: 20px;
 }
 /*SIDEBAR STYLE*/
-div.sidebar h1{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 25px;
-    color: #323232;
-}
+
 div.older-posts-one.img{
     width: 100%;
     height: 50%;
-    padding: 70px 20px 70px 20px;
+    padding: 70px 0px 70px 0px;
     background: url("../images/cucumber-mask.jpg");
     background-size: cover;
 }
 div.older-posts-two.img{
     width: 100%;
     height: 50%;
-    padding: 70px 20px 70px 20px;
+    padding: 70px 0px 70px 0px;
     background: url("../images/honey.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 div.older-posts-three.img{
     width: 100%;
     height: 50%;
-    padding: 70px 20px 70px 20px;
+    padding: 70px 0px 70px 0px;
     background: url("../images/blackMask.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 div.older-posts-one a,
 div.older-posts-two a,
@@ -191,14 +198,8 @@ div.older-posts-two h4:hover,
 div.older-posts-three h4:hover{
     color: #459b8b;
 }
-div.older-posts-one h4 ,
-div.older-posts-two h4,
-div.older-posts-three h4,
-label{
-    font-size: 15px;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #414d5b;
-}
+
+
 .fa.fa-search{
     color: #7b8d9b;
     font-size: 25px;
@@ -209,4 +210,9 @@ input.search{
     margin-bottom: 50px;
     width: 190px;
     height: 30px;
+}
+
+
+footer{
+    grid-area: ft;
 }

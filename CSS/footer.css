@@ -24,13 +24,16 @@ div.inner-wrap p{
     color: whitesmoke;
     font-family: 'Roboto Light', sans-serif;
 }
+
+
+
 .main-footer{
     display: flex;
     justify-content: space-between;
     padding-right:20px;
     padding-left:20px;
 }
-div.footer-fields{
+.footer-fields{
     width: 20%;
 }
 input{

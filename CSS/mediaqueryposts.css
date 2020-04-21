@@ -1,0 +1,93 @@
+
+@media only screen and (min-width: 613px) {
+    body{
+        display: block;
+    }
+
+    .sidebar{
+        grid-area: sidebar;
+        background-color: rgba(156, 227, 204, 0.61);
+        padding: 50px 20px 80px 25px;
+        border-left: 1px solid #3c3c3c;
+    }
+    .sidepostspace {
+        padding-bottom: 35px;
+    }
+
+    div.older-posts-one h4 ,
+    div.older-posts-two h4,
+    div.older-posts-three h4,
+    label{
+        font-size: 15px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #414d5b;
+    }
+}
+
+/*MOBILE DEVICE*/
+/*Iphone X* IPAD*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 612px){
+    body{
+        display: block;
+    }
+    div.title-wrap{
+        width: 60% !important;
+    }
+    div.older-posts-one.img,
+    div.older-posts-two.img{
+        width: 0px!important;
+        padding: 100px!important;
+    }
+    .fa.fa-user{
+        font-size: 15px!important;
+        padding-right: 15px;
+    }
+    .fa.fa-calendar{
+        font-size: 15px!important;
+        padding-right: 15px;
+    }
+    div.info p {
+        font-size: 20px!important;
+    }
+    div.share{
+        font-size: 25px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    div.older-posts-three.img{
+        width: 0px!important;
+        padding: 100px!important;
+        background-size: cover!important;
+    }
+    input.search{
+        width: 70%!important;
+    }
+
+    .sidebar{
+        grid-area: sidebar;
+        background-color: rgba(156, 227, 204, 0.61);
+        padding: 50px 10px 80px 40px;
+        border-left: 1px solid #3c3c3c;
+    }
+    .sidepostspace {
+        padding-bottom: 35px;
+    }
+    div.older-posts-one h4 ,
+    div.older-posts-two h4,
+    div.older-posts-three h4 {
+        font-size: 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #414d5b;
+    }
+
+    div.sidebar h1 {
+        font-size: 11px;
+    }
+
+    div.info p {
+        line-height: 0.5px;
+    }
+
+}
+
