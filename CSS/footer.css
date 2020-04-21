@@ -4,7 +4,15 @@
     padding-right: 50px;
     padding-left: 50px;
 }
-
+h4{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p {
+    line-height: 2;
+    width: 100%;
+    display: inline;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 div.inner-wrap{
     background-color: #2a2a2a;
     text-align: center;
@@ -25,14 +33,27 @@ div.inner-wrap p{
 div.footer-fields{
     width: 20%;
 }
-input, textarea{
+input{
     margin-top: 10px;
     margin-bottom: 10px;;
+}
+input[name=subscribe]{
+    font-size: 25px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    background-color: #459b8b;
+    border: 3px solid #414d5b;
+    border-radius: 10px;
+}
+
+input[name=subscribe]:hover {
+    background-color: #51c9b7;
+    cursor: pointer;
 }
 i.fa {
     font-size: 40px;
     color: #414141;
 }
 i.fa:hover{
-    color: white;
+    color: #51c9b7;
 }

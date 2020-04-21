@@ -6,14 +6,28 @@ body{
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+}
 
+h1.title{
+    text-shadow: 2px 2px 5px #262d34;
+    font-size: 100px;
+    padding-top: 70px;
+    padding-bottom: 200px;
+    padding-left: 60px;
+    font-family: 'Cabin Sketch', cursive;
+
+}
+h1.title a {
+    text-decoration: none;
+    color: #8A9EA7;
 }
 
 header{
     width:100%;
     background-image:url("../images/seaSalt.jpg");
     background-size: cover;
-    padding-bottom: 300px;
+    border-bottom: 2px solid #323232;
+
 }
 nav{
     float: right;
@@ -28,11 +42,11 @@ ul {
 ul li a {
     font-size: 20px;
     font-family:'Roboto Light', sans-serif;
-    padding: 8px;
+    padding: 10px;
     text-decoration: none;
-    color: #459b8b;
+    color: white;
     border-radius: 3px;
     margin: 15px;
-    background-color: whitesmoke;
+    background-color: #7b8d9b;
 
 }
