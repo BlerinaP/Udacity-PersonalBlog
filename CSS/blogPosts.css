@@ -1,11 +1,16 @@
+html,body
+{
+    overflow-x: hidden;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     grid-gap: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-   padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 
@@ -72,3 +77,6 @@ figcaption{
 footer{
     grid-area: ft;
 }
+
+.image {margin: 0px;}
+
