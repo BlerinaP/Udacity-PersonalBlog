@@ -3,6 +3,8 @@ html,body
     overflow-x: hidden;
 }
 
+* { box-sizing: border-box;}
+
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -52,7 +54,7 @@ p{
     line-height: 2;
     width: 100%;
     display: inline;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
 }
 .fa.fa-user,
 .fa.fa-calendar{
